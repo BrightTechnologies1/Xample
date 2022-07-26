@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="whoami">WHO AM I?</h1>
+    <button type="button" onclick="whoami()">Try it</button>
+    <script>
+    function whoami() {
+        document.getElementById("whoami").innerHTML = "Paragraph change koh.";
+    }
+    </script>
+
+
+      <h1>JavaScript Can Change Images</h1>
+
+      <img id="myImage" onclick="onbulb()" src="pic_bulboff.gif" width="100" height="180">
+
+      <p>Click the light bulb to turn on/off the light.</p>
+
+      <script>
+      function onbulb() {
+          var image = document.getElementById('myImage');
+          if (image.src.match("bulbon")) {
+              image.src = "pic_bulboff.gif";
+          } else {
+              image.src = "pic_bulbon.gif";
+          }
+      }
+      </script>
+
+
+      <p id="demol"> Hwllo Howdy</p>
+      <script>
+        document.getElementById("demol").style.fontSize = "25px";
+        document.getElementById("demol").style.color = "red";
+      </script>
+
+
+
+      <h1>JavaScript Can Validate Input</h1>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb" type="number">
+<input id="text" type="text" name="" value="">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+
+<h1>JavaScript in Head</h1>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+
+
+<h1>Alert message</h1>
+
+<script>
+window.alert("Let us notify you");
+</script>
+<h1>document.write</h1>
+
+<script>
+document.write(5 + 3);
+</script>
+
+<!-- <h1>document.write</h1>
+
+<button onclick="document.write(5 + 6)">Try it</button> -->
+
+<h1>My First Web Page</h1>
+
+<p id="damn"></p>
+
+<script>
+document.getElementById("damn").innerHTML = 5 + 6;
+</script>
+
+<script>
+console.log(5 + 6);
+console.log("How are you");
+</script>
+
+<h1>Assigning Values:<br/>In JavaScript the = operator is used to assign values to variables.</h1>
+
+
+<p id="demolam"></p>
+
+<script>
+var x = 5;
+var y = 6;
+document.getElementById("demolam").innerHTML = x / y;
+</script>
+
+<h1>The var Keyword Creates a Variable</h1>
+
+<p id="dann"></p>
+<script>
+var d = 5 + 6;
+var z = d * 10;
+var y = z + d * 10 / 4;
+document.getElementById("dann").innerHTML = y;
+</script>
+
+<!-- this is used for comment
+        /*  this  */
+        //  this  //
+ end -->
+
+
+ <p id="myPar">I am a paragraph.</p>
+<div id="myDiv">I am a div.</div>
+ <p>
+ <button type="button" onclick="myunction()">Try it</button>
+ </p>
+
+ <script>
+ function myunction() {
+     document.getElementById("myPar").innerHTML = 5 + 6 == 11;
+     document.getElementById("myDiv").innerHTML = "How are you?";
+ }
+ </script>
+
+ <h1>Create a variable, assign a value to it, and display it:</h1>
+
+ <p id="dey"></p>
+
+ <script>
+ var person = "John Doe", carName = "Volvo", price = 200;
+ var yh = person + " " + carName + " " + price;
+ document.getElementById("dey").innerHTML = yh;
+ </script>
+
+
+ <h1>Add "John" + " " + "Doe":</h1>
+
+ <p id="ddd"></p>
+
+ <script>
+ var x = "John" + " " + "Doe" ;
+ document.getElementById("ddd").innerHTML = x;
+ </script>
+
+
+<!-- tis method is wrong -->
+
+ <p>Add "5" + 2 + 3. and display the result:</p>
+
+ <p id="dddd"></p>
+
+ <script>
+ var x = "5" + 2 + 3;
+ document.getElementById("dddd").innerHTML = x;
+ </script>
+
+<!--  -->
+
+
+<h1>The % Operator (modulus)</h1>
+
+<p id="modulus"></p>
+
+<script>
+var x = 10;
+var y = 2;
+var z = x % y;
+document.getElementById("modulus").innerHTML = z;
+</script>
+
+
+<h1>The ++ Operator (increment)</h1>
+
+<p id="increment"></p>
+
+<script>
+var x = 5;
+x++
+var y = x;
+document.getElementById("increment").innerHTML = y;
+</script>
+
+
+<h1>The -- Operator (decrement)</h1>
+
+<p id="decrement"></p>
+
+<script>
+var x = 5;
+x--
+var y = x;
+document.getElementById("decrement").innerHTML = y;
+</script>
+
+<h1>The assignment Operator</h1>
+
+<p id="+="></p>
+
+<script>
+var x = 5;
+x-=10
+document.getElementById("+=").innerHTML = x;
+</script>
+
+<h1>The String Operation</h1>
+
+<p id="txt1"></p>
+
+<script>
+var txt1 = "who i'm I?";
+var txt2 = "BRIGHT.";
+var txt3 = txt1 + " " + txt2;
+document.getElementById("txt1").innerHTML = txt3;
+</script>
+
+
+<p id="txtstring"></p>
+
+<script>
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"';
+
+document.getElementById("txtstring").innerHTML =
+carName1 + "<br>" +
+carName2 + "<br>" +
+answer1 + "<br>" +
+answer2 + "<br>" +
+answer3;
+</script>
+
+<p id="cars"></p>
+
+<script>
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("cars").innerHTML = cars[2];
+</script>
+
+
+<h1>The typeof operator returns the type of a variable or an expression.</h1>
+
+<p id="typeof"></p>
+
+<script>
+document.getElementById("typeof").innerHTML =
+typeof "john" + "<br>" +
+typeof 3.14 + "<br>" +
+typeof false + "<br>" +
+typeof [1,2,3,4] + "<br>" +
+typeof {name:'john', age:34};
+</script>
+
+
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="far"></p>
+
+<script>
+function toCelsius(f) {
+    return (5/9) * (f-32);
+}
+document.getElementById("far").innerHTML = toCelsius(32);
+</script>
+
+
+
+
+  </body>
+</html>
